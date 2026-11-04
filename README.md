@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/AdBlock.list, po
 
 ## 自动更新
 
-GitHub Actions 每 12 小时运行一次（UTC 00:17、12:17；新加坡时间 08:17、20:17），也可在 **Actions → Update Loon ad rules → Run workflow** 手动运行。主要源不可用或构建结果异常时，工作流会失败并保留上一次生成的规则；历史索引中的可选源若暂时不可用会跳过，并在规则文件头部注明。
+GitHub Actions 每 12 小时运行一次（UTC 00:17、12:17；新加坡时间 08:17、20:17），也可在 **Actions → Update Loon ad rules → Run workflow** 手动运行；主分支内容更新时也会自动重建。主要源不可用或构建结果异常时，工作流会失败并保留上一次生成的规则；历史索引中的可选源若暂时不可用会跳过，并在规则文件头部注明。
 
 ## 已接入的来源
 
