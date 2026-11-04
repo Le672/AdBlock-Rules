@@ -106,6 +106,29 @@ def parse_lines(text: str, mode: str, reject_only: bool) -> set[str]:
     return result
 
 
+def write_list(filename: str, label: str, selected_names: list[str], by_source: dict[str, set[str]], source_notes: list[str], failures: list[str], updated: str) -> int:
+    selected = {name: rules for name, rules in by_source.items() if name in selected_names}
+    if not selected:
+        raise RuntimeError(f"No usable sources for {filename}")
+    all_rules = sorted(set.union(*selected.values()), key=lambda value: (value.split(",", 1)[0], value.casefold()))
+    if len(all_rules) < 10000:
+        raise RuntimeError(f"Combined rule count unexpectedly small for {filename}: {len(all_rules)}")
+    header = [
+        f"# NAME: Le672 Loon AdBlock Rules {label}",
+        "# DESCRIPTION: Aggregated Loon-compatible domain and IP ad/tracker blocking rules.",
+        "# REPO: https://github.com/Le672/Loon-AdBlock-Rules",
+        f"# UPDATED: {updated}",
+        f"# TOTAL: {len(all_rules)}",
+        *(note for note in source_notes if any(note.startswith(f"# SOURCE: {name} |") for name in selected)),
+    ]
+    for failure in failures:
+        header.append(f"# OPTIONAL SOURCE SKIPPED: {failure}")
+    with open(filename, "w", encoding="utf-8", newline="\\n") as output:
+        output.write("\\n".join(header + all_rules) + "\\n")
+    print(f"Wrote {filename}: {len(all_rules)} unique rules from {len(selected)} sources")
+    return len(all_rules)
+
+
 def main() -> int:
     by_source: dict[str, set[str]] = {}
     source_notes: list[str] = []
@@ -124,28 +147,22 @@ def main() -> int:
             failures.append(f"{name}: {exc}")
             print(f"Skipped {name}: {exc}", file=sys.stderr)
             if required:
-                raise RuntimeError(f"Required source failed; keeping previous list. {name}: {exc}") from exc
+                raise RuntimeError(f"Required source failed; keeping previous lists. {name}: {exc}") from exc
 
     if len(by_source) < 7:
         raise RuntimeError(f"Too few usable upstreams: {len(by_source)}")
-    all_rules = sorted(set.union(*by_source.values()), key=lambda value: (value.split(",", 1)[0], value.casefold()))
-    if len(all_rules) < 10000:
-        raise RuntimeError(f"Combined rule count unexpectedly small: {len(all_rules)}")
-
-    today = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    header = [
-        "# NAME: Le672 Loon AdBlock Rules",
-        "# DESCRIPTION: Aggregated Loon-compatible domain and IP ad/tracker blocking rules.",
-        "# REPO: https://github.com/Le672/Loon-AdBlock-Rules",
-        f"# UPDATED: {today}",
-        f"# TOTAL: {len(all_rules)}",
-        *source_notes,
+    updated = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    core_sources = [
+        "Blackmatrix7 Advertising_Domain",
+        "fmz200 wool_scripts rejectAd",
+        "anti-AD Surge rules",
+        "HyperADRules Surge ads rules",
+        "Johnshall Shadowrocket ad-only rules",
+        "nthack Shadowrocket ad rules",
+        "ADgk",
     ]
-    for failure in failures:
-        header.append(f"# OPTIONAL SOURCE SKIPPED: {failure}")
-    with open("AdBlock.list", "w", encoding="utf-8", newline="\n") as output:
-        output.write("\n".join(header + all_rules) + "\n")
-    print(f"Wrote {len(all_rules)} unique Loon rules from {len(by_source)} upstreams")
+    write_list("AdBlock.list", "", core_sources, by_source, source_notes, failures, updated)
+    write_list("AdBlock-Extended.list", "Extended", list(by_source), by_source, source_notes, failures, updated)
     return 0
 
 
