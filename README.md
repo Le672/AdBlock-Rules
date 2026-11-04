@@ -25,7 +25,7 @@ GitHub Actions 每 12 小时运行一次（UTC 00:17、12:17；新加坡时间 0
 - [Lynricsy/HyperADRules](https://github.com/Lynricsy/HyperADRules)：Surge 广告规则集
 - [Johnshall/Shadowrocket-ADBlock-Rules-Forever](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever)：仅去广告规则
 - [nthack/Shadowrocket-ADBlock-Rules-Easy](https://github.com/nthack/Shadowrocket-ADBlock-Rules-Easy)：只抽取动作明确为 REJECT 的规则
-- [REIJI007/Adblock-Rule-Collection](https://github.com/REIJI007/Adblock-Rule-Collection)：仅抽取可严格转为域名规则的条目
+- [REIJI007/Adblock-Rule-Collection](https://github.com/REIJI007/Adblock-Rule-Collection)：使用其 Lite 订阅，仅抽取可严格转为域名规则的条目
 - B 站 [《AdGuard 规则整理》](https://www.bilibili.com/opus/694495747932946457) 所列网络规则源：EasyList、EasyList China、EasyPrivacy、乘风、Adbyby、CJX Annoyance、ADgk
 
 ## 转换范围
