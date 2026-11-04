@@ -10,11 +10,13 @@
 https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/AdBlock.list, policy=REJECT, tag=Le672 广告拦截, enabled=true
 ```
 
-[规则直链](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/AdBlock.list)
+核心版（建议先导入，体积较小）：[AdBlock.list](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/AdBlock.list)
+
+扩展版（合并全部可用来源，规则更多、文件较大；与核心版二选一，避免重复）：[AdBlock-Extended.list](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/AdBlock-Extended.list)
 
 ## 自动更新
 
-GitHub Actions 每 12 小时运行一次（UTC 00:17、12:17；新加坡时间 08:17、20:17），也可在 **Actions → Update Loon ad rules → Run workflow** 手动运行；主分支内容更新时也会自动重建。主要源不可用或构建结果异常时，工作流会失败并保留上一次生成的规则；历史索引中的可选源若暂时不可用会跳过，并在规则文件头部注明。
+GitHub Actions 每 12 小时运行一次（UTC 00:17、12:17；新加坡时间 08:17、20:17），也可在 **Actions → Update Loon ad rules → Run workflow** 手动运行；主分支内容更新时也会自动重建。两份订阅使用同一批成功获取的来源分别生成。主要源不可用或构建结果异常时，工作流会失败并保留上一次生成的规则；历史索引中的可选源若暂时不可用会跳过，并在规则文件头部注明。
 
 ## 已接入的来源
 
