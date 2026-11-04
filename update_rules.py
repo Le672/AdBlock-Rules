@@ -114,7 +114,7 @@ def write_list(filename: str, label: str, selected_names: list[str], by_source: 
     if len(all_rules) < 10000:
         raise RuntimeError(f"Combined rule count unexpectedly small for {filename}: {len(all_rules)}")
     header = [
-        f"# NAME: Le672 Loon AdBlock Rules {label}",
+        f"# NAME: Le672 Loon AdBlock Rules{(" " + label) if label else ""}",
         "# DESCRIPTION: Aggregated Loon-compatible domain and IP ad/tracker blocking rules.",
         "# REPO: https://github.com/Le672/Loon-AdBlock-Rules",
         f"# UPDATED: {updated}",
@@ -123,8 +123,8 @@ def write_list(filename: str, label: str, selected_names: list[str], by_source: 
     ]
     for failure in failures:
         header.append(f"# OPTIONAL SOURCE SKIPPED: {failure}")
-    with open(filename, "w", encoding="utf-8", newline="\\n") as output:
-        output.write("\\n".join(header + all_rules) + "\\n")
+    with open(filename, "w", encoding="utf-8", newline="\n") as output:
+        output.write("\n".join(header + all_rules) + "\n")
     print(f"Wrote {filename}: {len(all_rules)} unique rules from {len(selected)} sources")
     return len(all_rules)
 
