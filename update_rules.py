@@ -17,7 +17,7 @@ SOURCES = [
     ("HyperADRules Surge ads rules", "https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_ads_surge.txt", "loon", True, False),
     ("Johnshall Shadowrocket ad-only rules", "https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf", "loon", True, True),
     ("nthack Shadowrocket ad rules", "https://nthack.github.io/Shadowrocket-ADBlock-Rules-Easy/sr_banlist_ad.conf", "loon", True, True),
-    ("REIJI007 Adblock Rule Collection", "https://raw.githubusercontent.com/REIJI007/Adblock-Rule-Collection/main/ADBLOCK_RULE_COLLECTION.txt", "abp", False, False),
+    ("REIJI007 Adblock Rule Collection", "https://raw.githubusercontent.com/REIJI007/Adblock-Rule-Collection/main/ADBLOCK_RULE_COLLECTION_Lite.txt", "abp", False, False),
     # Selective network-rule extraction from the 2022 Bilibili recommendation index.
     ("EasyList", "https://easylist-downloads.adblockplus.org/easylist.txt", "abp", False, False),
     ("EasyList China", "https://easylist-downloads.adblockplus.org/easylistchina.txt", "abp", False, False),
