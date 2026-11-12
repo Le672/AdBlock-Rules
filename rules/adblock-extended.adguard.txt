@@ -2,11 +2,11 @@
 ! NAME: Le672 Loon AdBlock Rules Extended
 ! DESCRIPTION: Aggregated Loon-compatible domain and IP ad/tracker blocking rules.
 ! REPO: https://github.com/Le672/Loon-AdBlock-Rules
-! UPDATED: 2026-11-12 06:37 UTC
-! TOTAL: 935730
+! UPDATED: 2026-11-12 06:53 UTC
+! TOTAL: 935745
 ! SOURCE: Blackmatrix7 Advertising_Domain | https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Advertising/Advertising_Domain.list | 16436 rules
 ! SOURCE: fmz200 wool_scripts rejectAd | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/rejectAd.list | 2649 rules
-! SOURCE: 217heidai adblockfilters Loon rule 14 | https://github.com/217heidai/adblockfilters/releases/download/rule/adblockloon.list | 256225 rules
+! SOURCE: 217heidai adblockfilters Loon rule 14 | https://github.com/217heidai/adblockfilters/releases/download/rule/adblockloon.list | 256298 rules
 ! SOURCE: anti-AD Surge rules | https://anti-ad.net/surge.txt | 101636 rules
 ! SOURCE: HyperADRules Surge ads rules | https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_ads_surge.txt | 162126 rules
 ! SOURCE: Johnshall Shadowrocket ad-only rules | https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf | 52395 rules
@@ -9775,6 +9775,7 @@
 ||1000springsresort.com^
 ||1000su.com^
 ||1000treasures.com^
+||1000yjs.skin^
 ||10010xbu5cykkk-1pj3yl5.net.daraz.com^
 ||1001celebrations.com^
 ||1001coques.com^
@@ -167805,6 +167806,7 @@
 ||crs.pa.br.de^
 ||crsbackend.myavlive.com^
 ||crseasonftmod.net.daraz.com^
+||crsese.sbs^
 ||crsgd.xyz^
 ||crshrwbekqstn.site^
 ||crsi.transunion.tt.omtrdc.net^
@@ -505497,6 +505499,7 @@
 ||f7ke2v.cloudstation.eu-west-1.inf.hydra.tt.omtrdc.net^
 ||f7nsv5ro7n5kehxk.net.daraz.com^
 ||f7qgahbdgw.7.tt.omtrdc.net^
+||f7qh.top^
 ||f7qhnenfbo.com^
 ||f7tcqphxc1.data.adobedc.net^
 ||f7thohf7joucu.ciinvestments.tt.omtrdc.net^
@@ -671661,6 +671664,7 @@
 ||mamka.aviasales.ru^
 ||mamkt.ht-bc.jp^
 ||mammasvari.shop^
+||mammazentrum-hamburg.de^
 ||mamminfinfish.com^
 ||mammocksambos.com^
 ||mammoth-a.pro^
@@ -678606,6 +678610,7 @@
 ||matomo.medivado.de^
 ||matomo.medizinfuchs.de^
 ||matomo.medizinischerdienst.de^
+||matomo.medmedia.at^
 ||matomo.medsolut.com^
 ||matomo.meetratechnologies.eu^
 ||matomo.megalis.bretagne.bzh^
@@ -679008,6 +679013,7 @@
 ||matomo.pokoleniester.pl^
 ||matomo.pol-uniwersum.eu^
 ||matomo.polaris.rotary.ch^
+||matomo.policum.berlin^
 ||matomo.politdir.eu^
 ||matomo.porrey61.de^
 ||matomo.portal.mardi4nfdi.de^
@@ -680038,6 +680044,7 @@
 ||matomoweb.coninet.it^
 ||matomy.com^
 ||matomyseo.com^
+||matotj.sbs^
 ||matri.eu^
 ||matricebarfs.cfd^
 ||matrimoniale3x.ro^
@@ -743189,6 +743196,7 @@
 ||pxtfv.brickellmensproducts.com^
 ||pxthyfgzm.com^
 ||pxtnuoekmucfd.space^
+||pxtrkapp.com^
 ||pxtu9ob4c18xvx7ejz5.cfd^
 ||pxtxitotxkkrk.website^
 ||pxuxlswadjlfu.space^
@@ -745456,6 +745464,7 @@
 ||qqcvdfytarpbw.site^
 ||qqcwkrvmpsssi.site^
 ||qqcyhtl.buzz^
+||qqcywzh.buzz^
 ||qqcyxhh.buzz^
 ||qqdalrqzvukzto.com^
 ||qqdata.ab.qq.com^
@@ -828061,6 +828070,7 @@
 ||tg.1155t.cn^
 ||tg.bwc178.com^
 ||tg.coffeeandbibletime.com^
+||tg.finance.ua^
 ||tg.jifen.2345.com^
 ||tg.m.37.com^
 ||tg.me^
@@ -830417,6 +830427,8 @@
 ||tj.youzanyun.com^
 ||tj001m.0571zkfk.com^
 ||tj1.staging.mibi.xiaomi.com^
+||tj123.org^
+||tj1888.com^
 ||tj3rql9siwef.www.freecodecamp.org^
 ||tj4rxr.ru^
 ||tj6w5.flx10.com^
@@ -833252,7 +833264,9 @@
 ||tongji.wlongchina.com^
 ||tongji.xinmin.cn^
 ||tongji001.sbs^
+||tongji3.top^
 ||tongjiniao.com^
+||tongjivip.com^
 ||tongjiyu.com^
 ||tongkho47.abphotos.link^
 ||tongkhohangnhat.abphotos.link^
@@ -903531,6 +903545,7 @@
 ||xn--i6qs37am6iwyqffc.com^
 ||xn--icn-hn0a.brandnewapp.pro^
 ||xn--imgr-x05a.com^
+||xn--jc2a749bpa.com^
 ||xn--m7r781dz66a.cn^
 ||xn--mgbkt9eckr.net^
 ||xn--momovints1-o8a64b3904adea8q.weebly.com^

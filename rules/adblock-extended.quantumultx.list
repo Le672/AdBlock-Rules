@@ -1,11 +1,11 @@
 # NAME: Le672 Loon AdBlock Rules Extended
 # DESCRIPTION: Aggregated Loon-compatible domain and IP ad/tracker blocking rules.
 # REPO: https://github.com/Le672/Loon-AdBlock-Rules
-# UPDATED: 2026-11-12 06:37 UTC
-# TOTAL: 935730
+# UPDATED: 2026-11-12 06:53 UTC
+# TOTAL: 935745
 # SOURCE: Blackmatrix7 Advertising_Domain | https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Advertising/Advertising_Domain.list | 16436 rules
 # SOURCE: fmz200 wool_scripts rejectAd | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/rejectAd.list | 2649 rules
-# SOURCE: 217heidai adblockfilters Loon rule 14 | https://github.com/217heidai/adblockfilters/releases/download/rule/adblockloon.list | 256225 rules
+# SOURCE: 217heidai adblockfilters Loon rule 14 | https://github.com/217heidai/adblockfilters/releases/download/rule/adblockloon.list | 256298 rules
 # SOURCE: anti-AD Surge rules | https://anti-ad.net/surge.txt | 101636 rules
 # SOURCE: HyperADRules Surge ads rules | https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_ads_surge.txt | 162126 rules
 # SOURCE: Johnshall Shadowrocket ad-only rules | https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf | 52395 rules
@@ -27221,6 +27221,7 @@ HOST-SUFFIX,1000russianwomen.com,REJECT
 HOST-SUFFIX,1000springsresort.com,REJECT
 HOST-SUFFIX,1000su.com,REJECT
 HOST-SUFFIX,1000treasures.com,REJECT
+HOST-SUFFIX,1000yjs.skin,REJECT
 HOST-SUFFIX,10010xbu5cykkk-1pj3yl5.net.daraz.com,REJECT
 HOST-SUFFIX,1001celebrations.com,REJECT
 HOST-SUFFIX,1001coques.com,REJECT
@@ -185251,6 +185252,7 @@ HOST-SUFFIX,crs.kaufland.tt.omtrdc.net,REJECT
 HOST-SUFFIX,crs.pa.br.de,REJECT
 HOST-SUFFIX,crsbackend.myavlive.com,REJECT
 HOST-SUFFIX,crseasonftmod.net.daraz.com,REJECT
+HOST-SUFFIX,crsese.sbs,REJECT
 HOST-SUFFIX,crsgd.xyz,REJECT
 HOST-SUFFIX,crshrwbekqstn.site,REJECT
 HOST-SUFFIX,crsi.transunion.tt.omtrdc.net,REJECT
@@ -522943,6 +522945,7 @@ HOST-SUFFIX,f7hyg4q.org,REJECT
 HOST-SUFFIX,f7ke2v.cloudstation.eu-west-1.inf.hydra.tt.omtrdc.net,REJECT
 HOST-SUFFIX,f7nsv5ro7n5kehxk.net.daraz.com,REJECT
 HOST-SUFFIX,f7qgahbdgw.7.tt.omtrdc.net,REJECT
+HOST-SUFFIX,f7qh.top,REJECT
 HOST-SUFFIX,f7qhnenfbo.com,REJECT
 HOST-SUFFIX,f7tcqphxc1.data.adobedc.net,REJECT
 HOST-SUFFIX,f7thohf7joucu.ciinvestments.tt.omtrdc.net,REJECT
@@ -689107,6 +689110,7 @@ HOST-SUFFIX,mameyhelots.cyou,REJECT
 HOST-SUFFIX,mamka.aviasales.ru,REJECT
 HOST-SUFFIX,mamkt.ht-bc.jp,REJECT
 HOST-SUFFIX,mammasvari.shop,REJECT
+HOST-SUFFIX,mammazentrum-hamburg.de,REJECT
 HOST-SUFFIX,mamminfinfish.com,REJECT
 HOST-SUFFIX,mammocksambos.com,REJECT
 HOST-SUFFIX,mammoth-a.pro,REJECT
@@ -696052,6 +696056,7 @@ HOST-SUFFIX,matomo.mediseal.eu,REJECT
 HOST-SUFFIX,matomo.medivado.de,REJECT
 HOST-SUFFIX,matomo.medizinfuchs.de,REJECT
 HOST-SUFFIX,matomo.medizinischerdienst.de,REJECT
+HOST-SUFFIX,matomo.medmedia.at,REJECT
 HOST-SUFFIX,matomo.medsolut.com,REJECT
 HOST-SUFFIX,matomo.meetratechnologies.eu,REJECT
 HOST-SUFFIX,matomo.megalis.bretagne.bzh,REJECT
@@ -696454,6 +696459,7 @@ HOST-SUFFIX,matomo.pohybovky.eu,REJECT
 HOST-SUFFIX,matomo.pokoleniester.pl,REJECT
 HOST-SUFFIX,matomo.pol-uniwersum.eu,REJECT
 HOST-SUFFIX,matomo.polaris.rotary.ch,REJECT
+HOST-SUFFIX,matomo.policum.berlin,REJECT
 HOST-SUFFIX,matomo.politdir.eu,REJECT
 HOST-SUFFIX,matomo.porrey61.de,REJECT
 HOST-SUFFIX,matomo.portal.mardi4nfdi.de,REJECT
@@ -697484,6 +697490,7 @@ HOST-SUFFIX,matomov5.ltntec.com,REJECT
 HOST-SUFFIX,matomoweb.coninet.it,REJECT
 HOST-SUFFIX,matomy.com,REJECT
 HOST-SUFFIX,matomyseo.com,REJECT
+HOST-SUFFIX,matotj.sbs,REJECT
 HOST-SUFFIX,matri.eu,REJECT
 HOST-SUFFIX,matricebarfs.cfd,REJECT
 HOST-SUFFIX,matrimoniale3x.ro,REJECT
@@ -760635,6 +760642,7 @@ HOST-SUFFIX,pxstda.com,REJECT
 HOST-SUFFIX,pxtfv.brickellmensproducts.com,REJECT
 HOST-SUFFIX,pxthyfgzm.com,REJECT
 HOST-SUFFIX,pxtnuoekmucfd.space,REJECT
+HOST-SUFFIX,pxtrkapp.com,REJECT
 HOST-SUFFIX,pxtu9ob4c18xvx7ejz5.cfd,REJECT
 HOST-SUFFIX,pxtxitotxkkrk.website,REJECT
 HOST-SUFFIX,pxuxlswadjlfu.space,REJECT
@@ -762902,6 +762910,7 @@ HOST-SUFFIX,qqctfteubitcl.site,REJECT
 HOST-SUFFIX,qqcvdfytarpbw.site,REJECT
 HOST-SUFFIX,qqcwkrvmpsssi.site,REJECT
 HOST-SUFFIX,qqcyhtl.buzz,REJECT
+HOST-SUFFIX,qqcywzh.buzz,REJECT
 HOST-SUFFIX,qqcyxhh.buzz,REJECT
 HOST-SUFFIX,qqdalrqzvukzto.com,REJECT
 HOST-SUFFIX,qqdata.ab.qq.com,REJECT
@@ -845507,6 +845516,7 @@ HOST-SUFFIX,tg-la7.online,REJECT
 HOST-SUFFIX,tg.1155t.cn,REJECT
 HOST-SUFFIX,tg.bwc178.com,REJECT
 HOST-SUFFIX,tg.coffeeandbibletime.com,REJECT
+HOST-SUFFIX,tg.finance.ua,REJECT
 HOST-SUFFIX,tg.jifen.2345.com,REJECT
 HOST-SUFFIX,tg.m.37.com,REJECT
 HOST-SUFFIX,tg.me,REJECT
@@ -847863,6 +847873,8 @@ HOST-SUFFIX,tj.wipemedownai.com,REJECT
 HOST-SUFFIX,tj.youzanyun.com,REJECT
 HOST-SUFFIX,tj001m.0571zkfk.com,REJECT
 HOST-SUFFIX,tj1.staging.mibi.xiaomi.com,REJECT
+HOST-SUFFIX,tj123.org,REJECT
+HOST-SUFFIX,tj1888.com,REJECT
 HOST-SUFFIX,tj3rql9siwef.www.freecodecamp.org,REJECT
 HOST-SUFFIX,tj4rxr.ru,REJECT
 HOST-SUFFIX,tj6w5.flx10.com,REJECT
@@ -850698,7 +850710,9 @@ HOST-SUFFIX,tongji.ttongji9.in,REJECT
 HOST-SUFFIX,tongji.wlongchina.com,REJECT
 HOST-SUFFIX,tongji.xinmin.cn,REJECT
 HOST-SUFFIX,tongji001.sbs,REJECT
+HOST-SUFFIX,tongji3.top,REJECT
 HOST-SUFFIX,tongjiniao.com,REJECT
+HOST-SUFFIX,tongjivip.com,REJECT
 HOST-SUFFIX,tongjiyu.com,REJECT
 HOST-SUFFIX,tongkho47.abphotos.link,REJECT
 HOST-SUFFIX,tongkhohangnhat.abphotos.link,REJECT
@@ -920977,6 +920991,7 @@ HOST-SUFFIX,xn--h6qpop2cq9nl9c.pages.dev,REJECT
 HOST-SUFFIX,xn--i6qs37am6iwyqffc.com,REJECT
 HOST-SUFFIX,xn--icn-hn0a.brandnewapp.pro,REJECT
 HOST-SUFFIX,xn--imgr-x05a.com,REJECT
+HOST-SUFFIX,xn--jc2a749bpa.com,REJECT
 HOST-SUFFIX,xn--m7r781dz66a.cn,REJECT
 HOST-SUFFIX,xn--mgbkt9eckr.net,REJECT
 HOST-SUFFIX,xn--momovints1-o8a64b3904adea8q.weebly.com,REJECT

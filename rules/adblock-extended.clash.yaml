@@ -1,11 +1,11 @@
 # NAME: Le672 Loon AdBlock Rules Extended
 # DESCRIPTION: Aggregated Loon-compatible domain and IP ad/tracker blocking rules.
 # REPO: https://github.com/Le672/Loon-AdBlock-Rules
-# UPDATED: 2026-11-12 06:37 UTC
-# TOTAL: 935730
+# UPDATED: 2026-11-12 06:53 UTC
+# TOTAL: 935745
 # SOURCE: Blackmatrix7 Advertising_Domain | https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Advertising/Advertising_Domain.list | 16436 rules
 # SOURCE: fmz200 wool_scripts rejectAd | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/rejectAd.list | 2649 rules
-# SOURCE: 217heidai adblockfilters Loon rule 14 | https://github.com/217heidai/adblockfilters/releases/download/rule/adblockloon.list | 256225 rules
+# SOURCE: 217heidai adblockfilters Loon rule 14 | https://github.com/217heidai/adblockfilters/releases/download/rule/adblockloon.list | 256298 rules
 # SOURCE: anti-AD Surge rules | https://anti-ad.net/surge.txt | 101636 rules
 # SOURCE: HyperADRules Surge ads rules | https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_ads_surge.txt | 162126 rules
 # SOURCE: Johnshall Shadowrocket ad-only rules | https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf | 52395 rules
@@ -27222,6 +27222,7 @@ payload:
   - "DOMAIN-SUFFIX,1000springsresort.com"
   - "DOMAIN-SUFFIX,1000su.com"
   - "DOMAIN-SUFFIX,1000treasures.com"
+  - "DOMAIN-SUFFIX,1000yjs.skin"
   - "DOMAIN-SUFFIX,10010xbu5cykkk-1pj3yl5.net.daraz.com"
   - "DOMAIN-SUFFIX,1001celebrations.com"
   - "DOMAIN-SUFFIX,1001coques.com"
@@ -185252,6 +185253,7 @@ payload:
   - "DOMAIN-SUFFIX,crs.pa.br.de"
   - "DOMAIN-SUFFIX,crsbackend.myavlive.com"
   - "DOMAIN-SUFFIX,crseasonftmod.net.daraz.com"
+  - "DOMAIN-SUFFIX,crsese.sbs"
   - "DOMAIN-SUFFIX,crsgd.xyz"
   - "DOMAIN-SUFFIX,crshrwbekqstn.site"
   - "DOMAIN-SUFFIX,crsi.transunion.tt.omtrdc.net"
@@ -522944,6 +522946,7 @@ payload:
   - "DOMAIN-SUFFIX,f7ke2v.cloudstation.eu-west-1.inf.hydra.tt.omtrdc.net"
   - "DOMAIN-SUFFIX,f7nsv5ro7n5kehxk.net.daraz.com"
   - "DOMAIN-SUFFIX,f7qgahbdgw.7.tt.omtrdc.net"
+  - "DOMAIN-SUFFIX,f7qh.top"
   - "DOMAIN-SUFFIX,f7qhnenfbo.com"
   - "DOMAIN-SUFFIX,f7tcqphxc1.data.adobedc.net"
   - "DOMAIN-SUFFIX,f7thohf7joucu.ciinvestments.tt.omtrdc.net"
@@ -689108,6 +689111,7 @@ payload:
   - "DOMAIN-SUFFIX,mamka.aviasales.ru"
   - "DOMAIN-SUFFIX,mamkt.ht-bc.jp"
   - "DOMAIN-SUFFIX,mammasvari.shop"
+  - "DOMAIN-SUFFIX,mammazentrum-hamburg.de"
   - "DOMAIN-SUFFIX,mamminfinfish.com"
   - "DOMAIN-SUFFIX,mammocksambos.com"
   - "DOMAIN-SUFFIX,mammoth-a.pro"
@@ -696053,6 +696057,7 @@ payload:
   - "DOMAIN-SUFFIX,matomo.medivado.de"
   - "DOMAIN-SUFFIX,matomo.medizinfuchs.de"
   - "DOMAIN-SUFFIX,matomo.medizinischerdienst.de"
+  - "DOMAIN-SUFFIX,matomo.medmedia.at"
   - "DOMAIN-SUFFIX,matomo.medsolut.com"
   - "DOMAIN-SUFFIX,matomo.meetratechnologies.eu"
   - "DOMAIN-SUFFIX,matomo.megalis.bretagne.bzh"
@@ -696455,6 +696460,7 @@ payload:
   - "DOMAIN-SUFFIX,matomo.pokoleniester.pl"
   - "DOMAIN-SUFFIX,matomo.pol-uniwersum.eu"
   - "DOMAIN-SUFFIX,matomo.polaris.rotary.ch"
+  - "DOMAIN-SUFFIX,matomo.policum.berlin"
   - "DOMAIN-SUFFIX,matomo.politdir.eu"
   - "DOMAIN-SUFFIX,matomo.porrey61.de"
   - "DOMAIN-SUFFIX,matomo.portal.mardi4nfdi.de"
@@ -697485,6 +697491,7 @@ payload:
   - "DOMAIN-SUFFIX,matomoweb.coninet.it"
   - "DOMAIN-SUFFIX,matomy.com"
   - "DOMAIN-SUFFIX,matomyseo.com"
+  - "DOMAIN-SUFFIX,matotj.sbs"
   - "DOMAIN-SUFFIX,matri.eu"
   - "DOMAIN-SUFFIX,matricebarfs.cfd"
   - "DOMAIN-SUFFIX,matrimoniale3x.ro"
@@ -760636,6 +760643,7 @@ payload:
   - "DOMAIN-SUFFIX,pxtfv.brickellmensproducts.com"
   - "DOMAIN-SUFFIX,pxthyfgzm.com"
   - "DOMAIN-SUFFIX,pxtnuoekmucfd.space"
+  - "DOMAIN-SUFFIX,pxtrkapp.com"
   - "DOMAIN-SUFFIX,pxtu9ob4c18xvx7ejz5.cfd"
   - "DOMAIN-SUFFIX,pxtxitotxkkrk.website"
   - "DOMAIN-SUFFIX,pxuxlswadjlfu.space"
@@ -762903,6 +762911,7 @@ payload:
   - "DOMAIN-SUFFIX,qqcvdfytarpbw.site"
   - "DOMAIN-SUFFIX,qqcwkrvmpsssi.site"
   - "DOMAIN-SUFFIX,qqcyhtl.buzz"
+  - "DOMAIN-SUFFIX,qqcywzh.buzz"
   - "DOMAIN-SUFFIX,qqcyxhh.buzz"
   - "DOMAIN-SUFFIX,qqdalrqzvukzto.com"
   - "DOMAIN-SUFFIX,qqdata.ab.qq.com"
@@ -845508,6 +845517,7 @@ payload:
   - "DOMAIN-SUFFIX,tg.1155t.cn"
   - "DOMAIN-SUFFIX,tg.bwc178.com"
   - "DOMAIN-SUFFIX,tg.coffeeandbibletime.com"
+  - "DOMAIN-SUFFIX,tg.finance.ua"
   - "DOMAIN-SUFFIX,tg.jifen.2345.com"
   - "DOMAIN-SUFFIX,tg.m.37.com"
   - "DOMAIN-SUFFIX,tg.me"
@@ -847864,6 +847874,8 @@ payload:
   - "DOMAIN-SUFFIX,tj.youzanyun.com"
   - "DOMAIN-SUFFIX,tj001m.0571zkfk.com"
   - "DOMAIN-SUFFIX,tj1.staging.mibi.xiaomi.com"
+  - "DOMAIN-SUFFIX,tj123.org"
+  - "DOMAIN-SUFFIX,tj1888.com"
   - "DOMAIN-SUFFIX,tj3rql9siwef.www.freecodecamp.org"
   - "DOMAIN-SUFFIX,tj4rxr.ru"
   - "DOMAIN-SUFFIX,tj6w5.flx10.com"
@@ -850699,7 +850711,9 @@ payload:
   - "DOMAIN-SUFFIX,tongji.wlongchina.com"
   - "DOMAIN-SUFFIX,tongji.xinmin.cn"
   - "DOMAIN-SUFFIX,tongji001.sbs"
+  - "DOMAIN-SUFFIX,tongji3.top"
   - "DOMAIN-SUFFIX,tongjiniao.com"
+  - "DOMAIN-SUFFIX,tongjivip.com"
   - "DOMAIN-SUFFIX,tongjiyu.com"
   - "DOMAIN-SUFFIX,tongkho47.abphotos.link"
   - "DOMAIN-SUFFIX,tongkhohangnhat.abphotos.link"
@@ -920978,6 +920992,7 @@ payload:
   - "DOMAIN-SUFFIX,xn--i6qs37am6iwyqffc.com"
   - "DOMAIN-SUFFIX,xn--icn-hn0a.brandnewapp.pro"
   - "DOMAIN-SUFFIX,xn--imgr-x05a.com"
+  - "DOMAIN-SUFFIX,xn--jc2a749bpa.com"
   - "DOMAIN-SUFFIX,xn--m7r781dz66a.cn"
   - "DOMAIN-SUFFIX,xn--mgbkt9eckr.net"
   - "DOMAIN-SUFFIX,xn--momovints1-o8a64b3904adea8q.weebly.com"
