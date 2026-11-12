@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import datetime as dt
 import ipaddress
+import json
+from pathlib import Path
 import re
 import sys
 import urllib.request
@@ -106,6 +108,53 @@ def parse_lines(text: str, mode: str, reject_only: bool) -> set[str]:
     return result
 
 
+def export_platforms(stem: str, rules: list[str], header: list[str]) -> None:
+    """Export common normalized rules; unsupported types are explicitly omitted."""
+    groups: dict[str, list[str]] = {}
+    for rule in rules:
+        kind, value = rule.split(",", 1)
+        groups.setdefault(kind, []).append(value)
+    def save(path: str, content: str) -> None:
+        with open(path, "w", encoding="utf-8", newline="\n") as stream:
+            stream.write(content)
+        print(f"Exported {path}")
+    base = Path("rules")
+    base.mkdir(exist_ok=True)
+    notes = "\n".join(header) + "\n"
+    # Adblock domain anchors match the base domain and all its subdomains.
+    # Exact DOMAIN, keyword and IP rules are omitted to preserve matching scope.
+    abp = [f"||{domain}^" for domain in groups.get("DOMAIN-SUFFIX", [])]
+    abp_notes = [line.replace("# ", "! ", 1) for line in header]
+    save(str(base / f"{stem}.adguard.txt"), "[Adblock Plus 2.0]\n" +
+         "\n".join(abp_notes + ["! Expires: 12 hours",
+         "! Scope: DOMAIN-SUFFIX only; no cosmetic or script rules."] + abp) + "\n")
+    save(str(base / f"{stem}.surge.list"), notes + "\n".join(rules) + "\n")
+    save(str(base / f"{stem}.clash.yaml"), notes + "payload:\n" +
+         "\n".join("  - " + json.dumps(rule) for rule in rules) + "\n")
+    qx_types = {"DOMAIN": "HOST", "DOMAIN-SUFFIX": "HOST-SUFFIX",
+                "DOMAIN-KEYWORD": "HOST-KEYWORD", "IP-CIDR": "IP-CIDR",
+                "IP-CIDR6": "IP6-CIDR"}
+    save(str(base / f"{stem}.quantumultx.list"), notes + "\n".join(
+         f"{qx_types[kind]},{value},REJECT" for kind, values in groups.items()
+         for value in values) + "\n")
+    fields = {"DOMAIN": "domain", "DOMAIN-SUFFIX": "domain_suffix",
+              "DOMAIN-KEYWORD": "domain_keyword"}
+    # Separate objects are ORed. Fields inside one object would be ANDed.
+    sing_rules = [{field: groups[kind]} for kind, field in fields.items() if groups.get(kind)]
+    ips = groups.get("IP-CIDR", []) + groups.get("IP-CIDR6", [])
+    if ips:
+        sing_rules.append({"ip_cidr": ips})
+    save(str(base / f"{stem}.sing-box.json"),
+         json.dumps({"version": 1, "rules": sing_rules}, ensure_ascii=False, indent=2) + "\n")
+    domains = sorted(set(groups.get("DOMAIN", []) + groups.get("DOMAIN-SUFFIX", [])))
+    save(str(base / f"{stem}.hosts.txt"), notes +
+         "# Hosts entries match only the listed hostname, not arbitrary subdomains.\n" +
+         "\n".join(f"0.0.0.0 {domain}" for domain in domains) + "\n")
+    save(str(base / f"{stem}.domains.txt"), notes +
+         "# Exact hostnames only; wildcard suffix semantics are not retained.\n" +
+         "\n".join(domains) + "\n")
+
+
 def write_list(filename: str, label: str, selected_names: list[str], by_source: dict[str, set[str]], source_notes: list[str], failures: list[str], updated: str) -> int:
     selected = {name: rules for name, rules in by_source.items() if name in selected_names}
     if not selected:
@@ -125,6 +174,7 @@ def write_list(filename: str, label: str, selected_names: list[str], by_source: 
         header.append(f"# OPTIONAL SOURCE SKIPPED: {failure}")
     with open(filename, "w", encoding="utf-8", newline="\n") as output:
         output.write("\n".join(header + all_rules) + "\n")
+    export_platforms("adblock-extended" if label else "adblock", all_rules, header)
     print(f"Wrote {filename}: {len(all_rules)} unique rules from {len(selected)} sources")
     return len(all_rules)
 
