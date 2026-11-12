@@ -1,4 +1,4 @@
-name: Update Loon ad rules
+name: Update ad blocking rules
 
 on:
   workflow_dispatch:
@@ -32,8 +32,8 @@ jobs:
             echo "No rule changes"
             exit 0
           fi
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git commit -m "chore: update Loon ad rules"
+          git config user.name Le672
+          git config user.email 194451716+Le672@users.noreply.github.com
+          git commit -m "chore: update ad blocking rules"
           git pull --rebase origin main
           git push
