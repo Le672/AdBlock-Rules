@@ -1,8 +1,8 @@
 # NAME: Le672 AdBlock Rules Extended
 # DESCRIPTION: Aggregated Loon-compatible domain and IP ad/tracker blocking rules.
 # REPO: https://github.com/Le672/AdBlock-Rules
-# UPDATED: 2026-11-12 07:19 UTC
-# TOTAL: 935753
+# UPDATED: 2026-11-12 07:49 UTC
+# TOTAL: 935763
 # SOURCE: Blackmatrix7 Advertising_Domain | https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Advertising/Advertising_Domain.list | 16436 rules
 # SOURCE: fmz200 wool_scripts rejectAd | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/rejectAd.list | 2649 rules
 # SOURCE: 217heidai adblockfilters Loon rule 14 | https://github.com/217heidai/adblockfilters/releases/download/rule/adblockloon.list | 256298 rules
@@ -11,7 +11,7 @@
 # SOURCE: Johnshall Shadowrocket ad-only rules | https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf | 52395 rules
 # SOURCE: nthack Shadowrocket ad rules | https://nthack.github.io/Shadowrocket-ADBlock-Rules-Easy/sr_banlist_ad.conf | 49241 rules
 # SOURCE: REIJI007 Adblock Rule Collection | https://raw.githubusercontent.com/REIJI007/Adblock-Rule-Collection/main/ADBLOCK_RULE_COLLECTION_Lite.txt | 794531 rules
-# SOURCE: EasyList | https://easylist-downloads.adblockplus.org/easylist.txt | 43233 rules
+# SOURCE: EasyList | https://easylist-downloads.adblockplus.org/easylist.txt | 43243 rules
 # SOURCE: EasyList China | https://easylist-downloads.adblockplus.org/easylistchina.txt | 5795 rules
 # SOURCE: EasyPrivacy | https://easylist-downloads.adblockplus.org/easyprivacy.txt | 40672 rules
 # SOURCE: ADgk | https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt | 3039 rules
@@ -109627,6 +109627,7 @@ HOST-SUFFIX,aution.pro,REJECT
 HOST-SUFFIX,autismspassers.cyou,REJECT
 HOST-SUFFIX,autismwatersafety.org,REJECT
 HOST-SUFFIX,autivnay.com,REJECT
+HOST-SUFFIX,autkxxcnzpqgs.space,REJECT
 HOST-SUFFIX,autmanagepartner.net.daraz.com,REJECT
 HOST-SUFFIX,autns2enticate.net.daraz.com,REJECT
 HOST-SUFFIX,auto-ads6.site,REJECT
@@ -542308,6 +542309,7 @@ HOST-SUFFIX,fwadashx.allseason.net.daraz.com,REJECT
 HOST-SUFFIX,fwadministrator.tt.omtrdc.net,REJECT
 HOST-SUFFIX,fwadministrators-ln-1.net.daraz.com,REJECT
 HOST-SUFFIX,fwaer-api.net.daraz.com,REJECT
+HOST-SUFFIX,fwahajqf.in,REJECT
 HOST-SUFFIX,fwallow.bankofmontreal.tt.omtrdc.net,REJECT
 HOST-SUFFIX,fwallow.caterpillarsigns.tt.omtrdc.net,REJECT
 HOST-SUFFIX,fwallow.nbaprop.tt.omtrdc.net,REJECT
@@ -585867,6 +585869,7 @@ HOST-SUFFIX,guxuxecuitddv.online,REJECT
 HOST-SUFFIX,guxzzlbqhkapq.online,REJECT
 HOST-SUFFIX,guyedtaluksmisdeed.cfd,REJECT
 HOST-SUFFIX,guyersludibry.cfd,REJECT
+HOST-SUFFIX,guyinghurler.com,REJECT
 HOST-SUFFIX,guyjrraidsrlk.store,REJECT
 HOST-SUFFIX,guyoetiepwijy.online,REJECT
 HOST-SUFFIX,guyotcalmer.com,REJECT
@@ -628439,6 +628442,7 @@ HOST-SUFFIX,jn1biifafz.cn,REJECT
 HOST-SUFFIX,jn23.madeindesign.ch,REJECT
 HOST-SUFFIX,jn23.madeindesign.it,REJECT
 HOST-SUFFIX,jnachb.com,REJECT
+HOST-SUFFIX,jnakqfpgvptno.website,REJECT
 HOST-SUFFIX,jnarigjkijgoh.space,REJECT
 HOST-SUFFIX,jnaxmcnlzsnox.com,REJECT
 HOST-SUFFIX,jnbd43jh.world,REJECT
@@ -629579,6 +629583,7 @@ HOST-SUFFIX,jqs77n9x.xyz,REJECT
 HOST-SUFFIX,jqscr.com,REJECT
 HOST-SUFFIX,jqsdu.heavyheadsocial.com,REJECT
 HOST-SUFFIX,jqsex.com,REJECT
+HOST-SUFFIX,jqsjzcyqgxekb.online,REJECT
 HOST-SUFFIX,jqsklowxurgbh.online,REJECT
 HOST-SUFFIX,jqsnt.cafepress.com,REJECT
 HOST-SUFFIX,jqsouo.gourmetcaree.jp,REJECT
@@ -638739,6 +638744,7 @@ HOST-SUFFIX,khufaw2.com,REJECT
 HOST-SUFFIX,khuldavection.cyou,REJECT
 HOST-SUFFIX,khuokpj.cn,REJECT
 HOST-SUFFIX,khuoy.com,REJECT
+HOST-SUFFIX,khustile.com,REJECT
 HOST-SUFFIX,khutedov.com,REJECT
 HOST-SUFFIX,khuyenkhichsangtaoviet.net,REJECT
 HOST-SUFFIX,khuyenmaifreefirex5.com,REJECT
@@ -765528,6 +765534,7 @@ HOST-SUFFIX,ramplorskyugle.shop,REJECT
 HOST-SUFFIX,rampmetrics.com,REJECT
 HOST-SUFFIX,ramppopulateresponse.com,REJECT
 HOST-SUFFIX,rampsmeow.cyou,REJECT
+HOST-SUFFIX,ramuleupbrim.com,REJECT
 HOST-SUFFIX,ranarooters.qpon,REJECT
 HOST-SUFFIX,rancemalars.com,REJECT
 HOST-SUFFIX,rancevoices.qpon,REJECT
@@ -765786,6 +765793,7 @@ HOST-SUFFIX,rash-thanks.pro,REJECT
 HOST-SUFFIX,rasha7ly.site,REJECT
 HOST-SUFFIX,rashcolonizeexpand.com,REJECT
 HOST-SUFFIX,rashelslawdesk.com,REJECT
+HOST-SUFFIX,rashfulexplees.com,REJECT
 HOST-SUFFIX,rashlyblowfly.com,REJECT
 HOST-SUFFIX,rashmimaheshwari.com,REJECT
 HOST-SUFFIX,rasittlbpwnbys.com,REJECT
@@ -926416,6 +926424,7 @@ HOST-SUFFIX,yopengtong.co,REJECT
 HOST-SUFFIX,yopmwlcblbgqp.online,REJECT
 HOST-SUFFIX,yopo0hx26.com,REJECT
 HOST-SUFFIX,yopuademtfkwb.space,REJECT
+HOST-SUFFIX,yopveibacjapc.website,REJECT
 HOST-SUFFIX,yoqpnkhl.com,REJECT
 HOST-SUFFIX,yoqrbof.cn,REJECT
 HOST-SUFFIX,yoredi.com,REJECT
@@ -931441,6 +931450,7 @@ HOST-SUFFIX,zkfjdxlwwcilg.website,REJECT
 HOST-SUFFIX,zkfwz.youngliving.com,REJECT
 HOST-SUFFIX,zkgbkn.pinkwoman-fashion.com,REJECT
 HOST-SUFFIX,zkgbp.fidodyrebutikk.com,REJECT
+HOST-SUFFIX,zkggdzyagjzcp.website,REJECT
 HOST-SUFFIX,zkggtossfobzd.space,REJECT
 HOST-SUFFIX,zkgm1blcma02.accountapilegacy-databasevpn.tt-stage3.omtrdc.net,REJECT
 HOST-SUFFIX,zkgp.0-astrologie-zong-stagingontroller-patner.net.daraz.com,REJECT
