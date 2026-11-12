@@ -1,4 +1,4 @@
-# Loon AdBlock Rules
+# Multi-platform AdBlock Rules
 
 适用于 iOS Loon 的广告与跟踪规则聚合。订阅文件仅输出 Loon 可用的域名、关键词和 IP 规则，全部动作在 Loon 订阅处指定为 `REJECT`。
 
@@ -13,6 +13,61 @@ https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/AdBlock.list, po
 核心版（建议先导入，体积较小）：[AdBlock.list](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/AdBlock.list)
 
 扩展版（合并全部可用来源，规则更多、文件较大；与核心版二选一，避免重复）：[AdBlock-Extended.list](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/AdBlock-Extended.list)
+
+## 多平台订阅
+
+每个平台提供核心版与扩展版，二选一即可。所有输出与 Loon 订阅一起每 12 小时更新。各客户端也需启用订阅自动更新；GitHub 定时任务可能延迟。
+
+| 软件 / 平台 | 核心版 | 扩展版 | 导入方式 |
+| --- | --- | --- | --- |
+| AdGuard / AdGuard Home / uBlock Origin | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.adguard.txt) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.adguard.txt) | 自定义过滤器；域名后缀拦截，不包含网页元素隐藏 |
+| Surge / Shadowrocket | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.surge.list) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.surge.list) | 远程规则集，选择 REJECT |
+| Clash / Mihomo | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.clash.yaml) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.clash.yaml) | rule-provider，behavior: classical |
+| Quantumult X | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.quantumultx.list) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.quantumultx.list) | filter_remote，文件自带 REJECT |
+| sing-box | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.sing-box.json) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.sing-box.json) | remote rule_set，format: source |
+| hosts / AdAway | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.hosts.txt) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.hosts.txt) | hosts 黑名单；仅匹配列出的主机名 |
+| 域名列表 / Pi-hole | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.domains.txt) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.domains.txt) | 按域名列表导入；仅匹配列出的主机名 |
+
+AdGuard：在“过滤器 / 自定义过滤器”中添加上述链接。AdGuard Home：在“过滤器 → DNS 黑名单”中添加链接。uBlock Origin：在“设置 → 过滤器列表 → 导入”粘贴链接。此处是域名网络拦截订阅，可与软件内置的网页元素过滤规则一起使用。AdGuard 版本只输出 `DOMAIN-SUFFIX`，不扩大精确域名规则的匹配范围，不转换关键词和 IP 规则。
+
+Clash / Mihomo 配置示例（合并进现有配置，将 RULE-SET 放在最终兜底规则之前）：
+
+```yaml
+rule-providers:
+  le672-adblock:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.clash.yaml
+    path: ./ruleset/le672-adblock.yaml
+    interval: 43200
+rules:
+  - RULE-SET,le672-adblock,REJECT
+```
+
+Quantumult X 的 `[filter_remote]` 示例：
+
+```ini
+https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.quantumultx.list, tag=Le672 广告拦截, force-policy=reject, update-interval=43200, enabled=true
+```
+
+sing-box 的 `route.rule_set` 条目：
+
+```json
+{
+  "type": "remote",
+  "tag": "le672-adblock",
+  "format": "source",
+  "url": "https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.sing-box.json",
+  "update_interval": "12h"
+}
+```
+
+在 `route.rules` 中添加 `{"rule_set":["le672-adblock"],"action":"reject"}`（适用于支持 action 路由语法的 sing-box 版本）。源文件使用多个独立规则对象实现域名、关键词和 IP 的 OR 匹配。规则集本身不包含代理节点或完整客户端配置。
+
+hosts 和纯域名格式保留域名项，但不支持任意子域名、关键词和网段匹配，因此覆盖范围小于代理软件规则。扩展版体积较大，移动设备建议先用核心版。
+
+格式依据：[AdGuard 官方语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/)、[Mihomo rule-provider](https://wiki.metacubex.one/en/config/rule-providers/)、[Quantumult X 示例](https://github.com/crossutility/Quantumult-X/blob/master/sample.conf)、[sing-box source format](https://sing-box.sagernet.org/configuration/rule-set/source-format/)。
 
 ## 自动更新
 
