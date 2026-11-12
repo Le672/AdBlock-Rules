@@ -1,18 +1,18 @@
 # Multi-platform AdBlock Rules
 
-适用于 iOS Loon 的广告与跟踪规则聚合。订阅文件仅输出 Loon 可用的域名、关键词和 IP 规则，全部动作在 Loon 订阅处指定为 `REJECT`。
+适用于 Loon、AdGuard、uBlock Origin、Surge、Shadowrocket、Mihomo、Quantumult X、sing-box 与 hosts 工具的广告和跟踪规则聚合。请使用下方对应平台的订阅格式。
 
 ## 导入 Loon
 
 将以下远程规则添加到配置，或在远程规则页面添加同一订阅 URL 并选择 `REJECT`：
 
 ```ini
-https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/AdBlock.list, policy=REJECT, tag=Le672 广告拦截, enabled=true
+https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/AdBlock.list, policy=REJECT, tag=Le672 广告拦截, enabled=true
 ```
 
-核心版（建议先导入，体积较小）：[AdBlock.list](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/AdBlock.list)
+核心版（建议先导入，体积较小）：[AdBlock.list](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/AdBlock.list)
 
-扩展版（合并全部可用来源，规则更多、文件较大；与核心版二选一，避免重复）：[AdBlock-Extended.list](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/AdBlock-Extended.list)
+扩展版（合并全部可用来源，规则更多、文件较大；与核心版二选一，避免重复）：[AdBlock-Extended.list](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/AdBlock-Extended.list)
 
 ## 多平台订阅
 
@@ -20,13 +20,13 @@ https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/AdBlock.list, po
 
 | 软件 / 平台 | 核心版 | 扩展版 | 导入方式 |
 | --- | --- | --- | --- |
-| AdGuard / AdGuard Home / uBlock Origin | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.adguard.txt) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.adguard.txt) | 自定义过滤器；域名后缀拦截，不包含网页元素隐藏 |
-| Surge / Shadowrocket | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.surge.list) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.surge.list) | 远程规则集，选择 REJECT |
-| Clash / Mihomo | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.clash.yaml) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.clash.yaml) | rule-provider，behavior: classical |
-| Quantumult X | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.quantumultx.list) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.quantumultx.list) | filter_remote，文件自带 REJECT |
-| sing-box | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.sing-box.json) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.sing-box.json) | remote rule_set，format: source |
-| hosts / AdAway | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.hosts.txt) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.hosts.txt) | hosts 黑名单；仅匹配列出的主机名 |
-| 域名列表 / Pi-hole | [核心版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.domains.txt) | [扩展版](https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock-extended.domains.txt) | 按域名列表导入；仅匹配列出的主机名 |
+| AdGuard / AdGuard Home / uBlock Origin | [核心版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock.adguard.txt) | [扩展版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock-extended.adguard.txt) | 自定义过滤器；域名后缀拦截，不包含网页元素隐藏 |
+| Surge / Shadowrocket | [核心版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock.surge.list) | [扩展版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock-extended.surge.list) | 远程规则集，选择 REJECT |
+| Clash / Mihomo | [核心版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock.clash.yaml) | [扩展版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock-extended.clash.yaml) | rule-provider，behavior: classical |
+| Quantumult X | [核心版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock.quantumultx.list) | [扩展版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock-extended.quantumultx.list) | filter_remote，文件自带 REJECT |
+| sing-box | [核心版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock.sing-box.json) | [扩展版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock-extended.sing-box.json) | remote rule_set，format: source |
+| hosts / AdAway | [核心版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock.hosts.txt) | [扩展版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock-extended.hosts.txt) | hosts 黑名单；仅匹配列出的主机名 |
+| 域名列表 / Pi-hole | [核心版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock.domains.txt) | [扩展版](https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock-extended.domains.txt) | 按域名列表导入；仅匹配列出的主机名 |
 
 AdGuard：在“过滤器 / 自定义过滤器”中添加上述链接。AdGuard Home：在“过滤器 → DNS 黑名单”中添加链接。uBlock Origin：在“设置 → 过滤器列表 → 导入”粘贴链接。此处是域名网络拦截订阅，可与软件内置的网页元素过滤规则一起使用。AdGuard 版本只输出 `DOMAIN-SUFFIX`，不扩大精确域名规则的匹配范围，不转换关键词和 IP 规则。
 
@@ -38,7 +38,7 @@ rule-providers:
     type: http
     behavior: classical
     format: yaml
-    url: https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.clash.yaml
+    url: https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock.clash.yaml
     path: ./ruleset/le672-adblock.yaml
     interval: 43200
 rules:
@@ -48,7 +48,7 @@ rules:
 Quantumult X 的 `[filter_remote]` 示例：
 
 ```ini
-https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.quantumultx.list, tag=Le672 广告拦截, force-policy=reject, update-interval=43200, enabled=true
+https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock.quantumultx.list, tag=Le672 广告拦截, force-policy=reject, update-interval=43200, enabled=true
 ```
 
 sing-box 的 `route.rule_set` 条目：
@@ -58,7 +58,7 @@ sing-box 的 `route.rule_set` 条目：
   "type": "remote",
   "tag": "le672-adblock",
   "format": "source",
-  "url": "https://raw.githubusercontent.com/Le672/Loon-AdBlock-Rules/main/rules/adblock.sing-box.json",
+  "url": "https://raw.githubusercontent.com/Le672/AdBlock-Rules/main/rules/adblock.sing-box.json",
   "update_interval": "12h"
 }
 ```
@@ -71,7 +71,7 @@ hosts 和纯域名格式保留域名项，但不支持任意子域名、关键�
 
 ## 自动更新
 
-GitHub Actions 每 12 小时运行一次（UTC 00:17、12:17；新加坡时间 08:17、20:17），也可在 **Actions → Update Loon ad rules → Run workflow** 手动运行；主分支内容更新时也会自动重建。两份订阅使用同一批成功获取的来源分别生成。主要源不可用或构建结果异常时，工作流会失败并保留上一次生成的规则；历史索引中的可选源若暂时不可用会跳过，并在规则文件头部注明。
+GitHub Actions 每 12 小时运行一次（UTC 00:17、12:17；新加坡时间 08:17、20:17），也可在 **Actions → Update ad blocking rules → Run workflow** 手动运行；主分支内容更新时也会自动重建。两份订阅使用同一批成功获取的来源分别生成。主要源不可用或构建结果异常时，工作流会失败并保留上一次生成的规则；历史索引中的可选源若暂时不可用会跳过，并在规则文件头部注明。
 
 ## 已接入的来源
 
