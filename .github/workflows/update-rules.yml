@@ -1,0 +1,40 @@
+name: Update ad blocking rules
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "17 */12 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-loon-rules
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Build combined list
+        run: python update_rules.py
+      - name: Commit updated list
+        run: |
+          git add AdBlock.list AdBlock-Extended.list rules/
+          if git diff --cached --quiet -- AdBlock.list AdBlock-Extended.list rules/; then
+            echo "No rule changes"
+            exit 0
+          fi
+          git config user.name Le672
+          git config user.email 194451716+Le672@users.noreply.github.com
+          git commit -m "chore: update ad blocking rules"
+          git push
