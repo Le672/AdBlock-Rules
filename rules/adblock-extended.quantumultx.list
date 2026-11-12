@@ -1,8 +1,8 @@
 # NAME: Le672 AdBlock Rules Extended
 # DESCRIPTION: Aggregated Loon-compatible domain and IP ad/tracker blocking rules.
 # REPO: https://github.com/Le672/AdBlock-Rules
-# UPDATED: 2026-11-12 06:57 UTC
-# TOTAL: 935745
+# UPDATED: 2026-11-12 07:19 UTC
+# TOTAL: 935753
 # SOURCE: Blackmatrix7 Advertising_Domain | https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Advertising/Advertising_Domain.list | 16436 rules
 # SOURCE: fmz200 wool_scripts rejectAd | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/rejectAd.list | 2649 rules
 # SOURCE: 217heidai adblockfilters Loon rule 14 | https://github.com/217heidai/adblockfilters/releases/download/rule/adblockloon.list | 256298 rules
@@ -11,7 +11,7 @@
 # SOURCE: Johnshall Shadowrocket ad-only rules | https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf | 52395 rules
 # SOURCE: nthack Shadowrocket ad rules | https://nthack.github.io/Shadowrocket-ADBlock-Rules-Easy/sr_banlist_ad.conf | 49241 rules
 # SOURCE: REIJI007 Adblock Rule Collection | https://raw.githubusercontent.com/REIJI007/Adblock-Rule-Collection/main/ADBLOCK_RULE_COLLECTION_Lite.txt | 794531 rules
-# SOURCE: EasyList | https://easylist-downloads.adblockplus.org/easylist.txt | 43225 rules
+# SOURCE: EasyList | https://easylist-downloads.adblockplus.org/easylist.txt | 43233 rules
 # SOURCE: EasyList China | https://easylist-downloads.adblockplus.org/easylistchina.txt | 5795 rules
 # SOURCE: EasyPrivacy | https://easylist-downloads.adblockplus.org/easyprivacy.txt | 40672 rules
 # SOURCE: ADgk | https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt | 3039 rules
@@ -115552,6 +115552,7 @@ HOST-SUFFIX,bcolyyp.in,REJECT
 HOST-SUFFIX,bcombdmnoidze.online,REJECT
 HOST-SUFFIX,bcomniture.focus.de,REJECT
 HOST-SUFFIX,bcontactrcodes.net.daraz.com,REJECT
+HOST-SUFFIX,bcopkduemfsfx.site,REJECT
 HOST-SUFFIX,bcoqzptkuouqw.online,REJECT
 HOST-SUFFIX,bcorpns-sso.net.daraz.com,REJECT
 HOST-SUFFIX,bcosg.livemomentous.com,REJECT
@@ -125743,6 +125744,7 @@ HOST-SUFFIX,bkbmungtxueiz.online,REJECT
 HOST-SUFFIX,bkbntniwbhlntm.com,REJECT
 HOST-SUFFIX,bkcommdata.v.qq.com,REJECT
 HOST-SUFFIX,bkcubzzabtoda.site,REJECT
+HOST-SUFFIX,bkdaubzr.com,REJECT
 HOST-SUFFIX,bkdg.net,REJECT
 HOST-SUFFIX,bkdgubziyvccl.site,REJECT
 HOST-SUFFIX,bkdlc.lincolncenter.org,REJECT
@@ -514236,6 +514238,7 @@ HOST-SUFFIX,escabona.com.ssl.sc.tt.omtrdc.net,REJECT
 HOST-SUFFIX,escalated.io,REJECT
 HOST-SUFFIX,escalatenetwork.com,REJECT
 HOST-SUFFIX,escalopbabis.cfd,REJECT
+HOST-SUFFIX,escalopdiplontdyaster.cfd,REJECT
 HOST-SUFFIX,escalopdryestburoo.qpon,REJECT
 HOST-SUFFIX,escape-ec.metropolitan-touring.com,REJECT
 HOST-SUFFIX,escape.livelovespa.com,REJECT
@@ -551551,6 +551554,7 @@ HOST-SUFFIX,ggpkyvsokroop.online,REJECT
 HOST-SUFFIX,ggprfmbbl.com,REJECT
 HOST-SUFFIX,ggpszczyna7.tt.omtrdc.net,REJECT
 HOST-SUFFIX,ggpzb.californiababy.com,REJECT
+HOST-SUFFIX,ggqzajrzxqzie.space,REJECT
 HOST-SUFFIX,ggr.yxdown.com,REJECT
 HOST-SUFFIX,ggrafana.ingrammicro.tt.omtrdc.net,REJECT
 HOST-SUFFIX,ggrafana.panduitcorporation.tt.omtrdc.net,REJECT
@@ -656550,6 +656554,7 @@ HOST-SUFFIX,llwgnafyieumn.store,REJECT
 HOST-SUFFIX,llwiazpvumalz.online,REJECT
 HOST-SUFFIX,llwoyl.mirraw.com,REJECT
 HOST-SUFFIX,llxads.com,REJECT
+HOST-SUFFIX,llxbqnbxoyspx.website,REJECT
 HOST-SUFFIX,llxemmopmuitk.space,REJECT
 HOST-SUFFIX,llxhgmptlnuxe.space,REJECT
 HOST-SUFFIX,llxjrt.icu,REJECT
@@ -762823,6 +762828,7 @@ HOST-SUFFIX,qphtsq.envirosafetyproducts.com,REJECT
 HOST-SUFFIX,qphxgwnqgbkzwh.com,REJECT
 HOST-SUFFIX,qpianhkxxuc.com,REJECT
 HOST-SUFFIX,qpielh.kfhi.or.kr,REJECT
+HOST-SUFFIX,qpiqfglwwzjdw.space,REJECT
 HOST-SUFFIX,qpiyjprptazz.com,REJECT
 HOST-SUFFIX,qpizuvmta.com,REJECT
 HOST-SUFFIX,qpjdqinypyhct.site,REJECT
@@ -921527,6 +921533,7 @@ HOST-SUFFIX,xrb5zmxe2j.com,REJECT
 HOST-SUFFIX,xrbcmxuzmyfzj.website,REJECT
 HOST-SUFFIX,xrbdcvkbhfiw.com,REJECT
 HOST-SUFFIX,xrbmomiow.com,REJECT
+HOST-SUFFIX,xrbqnjazjsnpr.website,REJECT
 HOST-SUFFIX,xrbvsiyyr.com,REJECT
 HOST-SUFFIX,xrcksn.vvf-villages.fr,REJECT
 HOST-SUFFIX,xrdcyg.ellementry.com,REJECT
@@ -927011,6 +927018,7 @@ HOST-SUFFIX,yrlkte.in360.pl,REJECT
 HOST-SUFFIX,yrlovhdvzrdxs.site,REJECT
 HOST-SUFFIX,yrmxtvqpp.com,REJECT
 HOST-SUFFIX,yrnet.net.daraz.com,REJECT
+HOST-SUFFIX,yrngkfqrbpryz.site,REJECT
 HOST-SUFFIX,yrninidzsdiwt.online,REJECT
 HOST-SUFFIX,yrnv.cn,REJECT
 HOST-SUFFIX,yrnyvjyd.paradox24.com,REJECT
